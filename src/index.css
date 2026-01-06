@@ -17,6 +17,22 @@ body{
     background-color: var(--color-background);
 }
 
+.hero {
+    position: relative;
+    height: 420px;
+    background-image: url("/src/assets/images/restaurants/restaurant4.jpg");
+    background-size: cover;
+    background-position: center;
+    border-radius: 16px;
+    overflow: hidden;
+}
+
+.overlay{
+    position: absolute;
+    inset: 0;
+    background-color: rgba(29, 33, 25, 0.6);
+}
+
 @layer utilities{
     .heading-responsive {
         @apply text-2xl md:text-3xl lg:text-4xl;
