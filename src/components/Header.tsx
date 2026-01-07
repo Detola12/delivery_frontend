@@ -4,7 +4,7 @@ import QuickAuth from "./auth/QuickAuth.tsx";
 
 const Header = () => {
     return (
-        <nav className="grid grid-cols-12 gap-6 items-center w-full pt-3 px-20 ">
+        <nav className="grid grid-cols-12 gap-6 items-center w-full pt-3 px-40 ">
             {/* Logo */}
             <div className="sm:col-span-5 md:col-span-5 lg:col-span-2 font-semibold text-2xl bounce-in-top">
                 Quick<span className="font-bold text-dark ">Eats</span>

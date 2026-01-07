@@ -2,6 +2,7 @@ import Home from "./pages/Home.tsx";
 import {type RouteObject, useRoutes} from "react-router-dom";
 import Layout from "./components/Layout.tsx";
 import Listings from "./pages/restaurant/Listing.tsx";
+import Index from "./pages/restaurant/Index.tsx";
 
 function App() {
 
@@ -25,11 +26,11 @@ function App() {
       ]
     },
     {
-      path: "/restaurants/{restaurant}",
+      path: "/restaurants/:restaurant",
       element : <Layout/>,
       children: [
         {
-          index: true, element: <Listings/>
+          index: true, element: <Index/>
         }
       ]
     }
