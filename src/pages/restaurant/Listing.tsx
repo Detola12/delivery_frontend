@@ -6,6 +6,7 @@ import Hero from "../../components/restaurant/listings/Hero.tsx";
 import {Star, Truck, X} from "lucide-react";
 import {restaurants} from "../../data/restaurants.ts";
 import {useEffect, useState} from "react";
+import {Link} from "react-router-dom";
 
 const Listings = () => {
     const [limit, setLimit] = useState(20);
@@ -28,7 +29,14 @@ const Listings = () => {
         return () => window.removeEventListener('resize', updateLimit);
     })
     return (
-        <div className="grid grid-cols-3 md:grid-cols-6 gap-6 mt-20">
+        <div>
+            <div className="flex text-sm gap-6 text-dark/80 mt-12">
+                <Link to="/" className="">Home</Link>
+                <span>{">"}</span>
+                <Link to="/restaurants" className="font-bold">Restaurants</Link>
+                <span>{">"}</span>
+            </div>
+            <div className="grid grid-cols-3 md:grid-cols-6 gap-6 mt-20">
             {/*     Left     */}
             <div className="mt-6 flex flex-col gap-6 col-span-1">
                 <Sort/>
@@ -53,7 +61,7 @@ const Listings = () => {
                         {
                             restaurants.slice(0, limit).map((restaurant) => {
                                 return (
-                                    <div className="w-full shadow relative flex flex-col bg-card rounded-2xl transition hover:scale-105 ease-in-out duration-300">
+                                    <Link to={'/restaurants/1'} className="w-full shadow relative flex flex-col bg-card rounded-2xl transition hover:scale-105 ease-in-out duration-300 cursor-pointer">
                                         <div className="absolute flex items-center gap-1 left-2 top-2 bg-white/90 font-semibold text-xs px-[6px] py-[3px] rounded-2xl">
                                             <Star fill="#FACC15" size={15} strokeWidth={0}/>
                                             {restaurant.rating}(500+)
@@ -76,7 +84,7 @@ const Listings = () => {
                                                 <p className="text-xs">{restaurant.deliveryPrice}</p>
                                             </div>
                                         </div>
-                                    </div>
+                                    </Link>
 
                                 )
                             })
@@ -86,6 +94,7 @@ const Listings = () => {
 
                 {/*<div className="flex justify-center mt-6 bg-white px-5 py-3 text-center ">Load more</div>*/}
             </div>
+        </div>
         </div>
     );
 };

@@ -1,6 +1,7 @@
 import {Star, Truck} from "lucide-react";
 import {restaurants} from "../../data/restaurants.ts";
 import {useEffect, useState} from "react";
+import {Link} from "react-router-dom";
 
 const Store = () => {
     const [limit, setLimit] = useState(20);
@@ -24,9 +25,10 @@ const Store = () => {
     })
     return (
         <div>
+
             <div className="flex justify-between items-center">
                 <h2 className="heading-responsive font-bold">Popular near you</h2>
-                <a href="" className="text-sm">See More</a>
+                <Link to="/restaurants" className="text-sm">See More</Link>
             </div>
             <div className=" mt-7 grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 3xl:grid-cols-5 gap-x-5 gap-y-8">
                 {
