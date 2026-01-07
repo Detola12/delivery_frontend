@@ -16,7 +16,7 @@ export const restaurants : Restaurant[] = [
         rating: 4.6,
         deliveryTime: "10 - 15 min",
         deliveryPrice: "$1.69 Delivery",
-        image: "/src/assets/images/restaurants/restaurant1.jpg",
+        image: "/assets/images/restaurants/restaurant1.jpg",
     },
     {
         id: 2,
@@ -25,7 +25,7 @@ export const restaurants : Restaurant[] = [
         rating: 4.8,
         deliveryTime: "20 - 25 min",
         deliveryPrice: "$2.49 Delivery",
-        image: "/src/assets/images/restaurants/restaurant2.jpg",
+        image: "/assets/images/restaurants/restaurant2.jpg",
     },
     {
         id: 3,
@@ -34,13 +34,13 @@ export const restaurants : Restaurant[] = [
         rating: 4.4,
         deliveryTime: "15 - 20 min",
         deliveryPrice: "Free Delivery",
-        image: "/src/assets/images/restaurants/restaurant4.jpg",
+        image: "/assets/images/restaurants/restaurant4.jpg",
     },
     {
         id: 4,
         name: "Taco Town",
         categories: "Mexican, Tacos",
-        image: "/src/assets/images/restaurants/restaurant6.jpg",
+        image: "/assets/images/restaurants/restaurant6.jpg",
         rating: 4.3,
         deliveryTime: "25-35 min",
         deliveryPrice: "$2.49"
@@ -49,7 +49,7 @@ export const restaurants : Restaurant[] = [
         id: 5,
         name: "Pasta Palace",
         categories: "Italian, Pasta",
-        image: "/src/assets/images/restaurants/restaurant5.jpg",
+        image: "/assets/images/restaurants/restaurant5.jpg",
         rating: 4.5,
         deliveryTime: "30-40 min",
         deliveryPrice: "$3.99"

@@ -79,7 +79,7 @@ const Index = () => {
                     </div>
                     <div className="grid grid-cols-2 gap-4">
                         <div className="flex flex-col gap-4 rounded-3xl px-5 py-4 bg-white">
-                            <img src="/src/assets/images/food/food.jpg" className="rounded-4xl h-[245px] aspect-auto" alt=""/>
+                            <img src="/assets/images/food/food.jpg" className="rounded-4xl h-[245px] aspect-auto" alt=""/>
                             <div className="flex justify-between text-lg font-bold mt-2">
                                 <h5 className="">Double Pancake Cheese</h5>
                                 <p className="text-primary">$12.50</p>
@@ -91,7 +91,7 @@ const Index = () => {
                             </button>
                         </div>
                         <div className="flex flex-col gap-4 rounded-3xl px-5 py-4 bg-white">
-                            <img src="/src/assets/images/food/food2.jpg" className="rounded-4xl h-[245px] aspect-auto" alt=""/>
+                            <img src="/assets/images/food/food2.jpg" className="rounded-4xl h-[245px] aspect-auto" alt=""/>
                             <div className="flex justify-between text-lg font-bold mt-2">
                                 <h5 className="">Italian Noodles</h5>
                                 <p className="text-primary">$8.89</p>
@@ -122,7 +122,7 @@ const Index = () => {
                         </div>
                         <div className="border-b border-gray-200/60 w-7/8 mx-auto mt-2"></div>
                         <div className="flex gap-3 mt-4">
-                            <img src="/src/assets/images/restaurants/restaurant12.jpg" className="w-20 h-20 rounded-full" alt=""/>
+                            <img src="/assets/images/restaurants/restaurant12.jpg" className="w-20 h-20 rounded-full" alt=""/>
                             <div className="flex flex-col">
                                 <h5 className="font-bold text-sm">Chicken Sandwich(3pc)</h5>
                                 <p className="font-semibold text-xs text-dark/80">Garlic Sauce</p>
@@ -135,7 +135,7 @@ const Index = () => {
                             </div>
                         </div>
                         <div className="flex gap-3 mt-4">
-                            <img src="/src/assets/images/restaurants/restaurant2.jpg" className="w-20 h-20 rounded-full" alt=""/>
+                            <img src="/assets/images/restaurants/restaurant2.jpg" className="w-20 h-20 rounded-full" alt=""/>
                             <div className="flex flex-col">
                                 <h5 className="font-bold text-sm">Chicken Sandwich(3pc)</h5>
                                 <p className="font-semibold text-xs text-dark/80">Garlic Sauce</p>
